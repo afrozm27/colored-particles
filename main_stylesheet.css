@@ -1,0 +1,1003 @@
+@import url(../../../fonts.googleapis.com/css_81618a14.css);
+@import url(../../../fonts.googleapis.com/css_18f5857a.css);
+@import url(../../../fonts.googleapis.com/css_7db2e156.css);
+@import url(../../../fonts.googleapis.com/css_ad180761.css);
+@import url(../../../fonts.googleapis.com/css_5121ef67.css);
+@import url(../../../fonts.googleapis.com/css_dde85546.css);
+@import url(../../../fonts.googleapis.com/css_3d6eaf41.css);
+@import url(../../../fonts.googleapis.com/css_3f186844.css);
+@import url(../../../fonts.googleapis.com/css_e818ff4e.css);
+
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: table; 
+    width: 100%; 
+    height: 100%;
+    font-family:'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body h1 {
+    font-size: 3em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h3 {
+    font-size: 2em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h4 {
+    font-size: 1.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h5 {
+    font-size: 1.25em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.heading-underline{
+    border: none;
+    width: 100px;
+    margin : 1em auto 0.2em auto;
+    height: 4px;
+    color: #3dc9b3;
+    background-color: #3dc9b3;
+}
+
+.glowing-border {
+    border: 1px solid #00A695;
+    border-radius: 7px;
+}
+
+.glowing-border:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00A695;
+}
+
+/* --- Global Navbar --- */
+#mainNavbar {
+    background-color: #000000;
+    margin-top:20px;
+    border: none;
+}
+
+#mainNavbarHeader .navbar-toggle{
+    background-color: #00A695;
+}
+
+#mainNavbarHeader a{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#mainNavbarHeader a small{
+    font-size: 70%;
+}
+
+#mainNavbarContent{
+    border: none;
+}
+
+#mainNavbarContent a{
+    color: #FFFFFF;
+}
+
+#mainNavbarHeader .icon-bar{
+    background-color: #FFFFFF;
+}
+
+
+/* --- Global Footer --- */
+footer {
+    height: 1px;
+    display: table-row;
+    background: #333333;
+    color: #EEEEEE;
+    font-size: 11px;
+    padding: 20px;
+}
+
+footer .container .row div {
+    padding: 20px;
+}
+
+footer .container .row div #follow-me{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.social-link-list{
+    column-count: 3;
+}
+
+.social-link-list li a:link {
+    color: #FFFFFF !important;
+}
+
+.social-link-list li a:hover {
+    color: #50C7B3 !important;
+}
+
+.social-link-list li a:visited {
+    color: #8b67ff !important;
+}
+
+.social-link-list li a {
+    font-family: "proxima-nova","Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+}
+
+.social-link-list li a span {
+    font-size: 16px !important;
+}
+
+.social-link-list li a .fa-fw {
+    text-align: left;
+}
+
+/* --- Buttons --- */
+.btn-primary.light {
+
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-top: 2em;
+    padding: 0.75em 1.4em;
+    border-radius: 0;
+    background: none;
+    text-decoration:none;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+
+    -webkit-transition: background 0.5s; /* Safari */
+    -webkit-transition: color 0.2s; /* Safari */
+
+    transition-timing-function: ease;
+    transition: color 0.2s;
+    transition: background 0.5s;
+
+}
+
+.btn-primary.light:hover {
+
+    background: #00A695;
+    border-color: #00A695;
+    color: #000000;
+}
+
+.btn-primary.dark {
+
+    
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-top: 1em;
+    padding: 0.75em 1.4em;
+    border-radius: 0;
+    background: none;
+    text-decoration:none;
+    border: 2px solid #000000;
+    color: #000000;
+
+    -webkit-transition: background 0.5s; /* Safari */
+    -webkit-transition: color 0.2s; /* Safari */
+    
+    transition-timing-function: ease;
+    transition: color 0.2s;
+    transition: background 0.5s;
+
+}
+
+.btn-primary.dark:hover {
+    background: #00A695;
+    border-color: #00A695;
+    color: #FFFFFF;
+}
+
+a.btn-primary.dark {
+    display: inline-block;
+}
+
+
+
+/* --------------------------------------
+   Homepage Styles
+   -------------------------------------- */
+
+.homepage .container-dark{
+    background-color: #d4edea;
+}
+
+.homepage .section {
+    padding: 5em 0em 5em 0em;
+}
+
+.homepage .para-desc {
+    font-family: 'Roboto', sans-serif;
+    font-stretch: expanded;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 750px;
+    margin: auto;
+    color: #555555;
+}
+
+/* --- Banner --- */
+.homepage #mainBanner{
+    position:relative;
+    width: inherit;
+    height: 560px;
+    overflow: hidden;
+}
+
+.homepage #mainBanner img{
+    position:absolute;
+    z-index:-1;
+    left:50%;
+    height:inherit;
+    transform:translate(-50%, 0%); 
+
+}
+
+
+/* --- Main Container --- */
+.homepage #main-container{
+    overflow:auto;
+    padding-bottom: 180px; 
+}
+
+.homepage {
+}
+
+
+/* --- Skills Sub-Section --- */
+.homepage #skill-wrapper #skills{
+    margin: 0em 13em 0em 13em;
+}
+
+.homepage #skill-wrapper #skills img{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.homepage #skill-wrapper #skills h2{
+    margin-top: 1.5em;
+    margin-bottom: 1.25em;
+}
+
+
+/* --- Projects Sub-Section --- */
+.homepage #projects-wrapper {
+    text-align: center;
+}
+
+.homepage #projects-wrapper .row{
+    width: inherit;
+    margin: 3.25em auto auto auto;
+}
+
+.homepage #projects-wrapper .row .project-holder{
+    
+    background-color: #000000;
+    position:relative;
+    width: 350px;
+    height: 350px;
+    margin: 0em auto 3em auto;
+    overflow:hidden;
+}
+
+.homepage #projects-wrapper .row .project-holder img{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+}
+
+.homepage #projects-wrapper .row .project-holder:hover img{
+    opacity: 0.2;
+}
+
+.homepage #projects-wrapper .row .project-holder .project-caption {
+    padding: 0.5em;
+    display: none;
+    color: #FFFFFF;
+    text-align: center;
+    position:absolute;
+    z-index: 1;
+    left:50%;
+    top:50%;
+    width:inherit;
+    transform:translate(-50%, -50%); 
+}
+
+.homepage #projects-wrapper .row .project-holder:hover .project-caption{
+    display: block;
+}
+
+.homepage #projects-wrapper .row .project-holder .project-caption p{
+    margin-bottom: 2em;
+}
+
+
+/* --- Instagram Posts Sub-Section --- */
+.homepage #instagram-wrapper #posts {
+    margin : 3.25em auto auto auto;
+    width: 1200px; 
+}
+
+.homepage #instagram-wrapper .insta-img{
+
+    border: 1px solid #00A695;
+    height: 300px;
+    overflow:hidden;
+
+}
+
+.homepage #instagram-wrapper .insta-img img{
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 90%;
+    width: auto;
+    transform: translate(-50%,-50%);
+
+    transition-timing-function: ease;
+
+    -webkit-transition: height 0.4s; /* Safari */
+    transition: height 0.4s;
+
+}
+
+#instagram-wrapper .insta-img img:hover{
+
+    height: 100%;
+
+}
+
+
+
+/* --------------------------------------
+   Page 404 Styles
+   -------------------------------------- */
+
+.page-404 .main-container{
+    margin-top: 2em;
+    text-align:center;
+}
+
+.page-404 .gif-404{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.page-404 .gif-404 img{
+    width: 28em;
+}
+
+
+
+/* --------------------------------------
+   Project Page Styles
+   -------------------------------------- */
+
+.projectspage #projects {
+    padding-top: 1.5em;
+    padding-bottom: 6.5em;
+    text-align: center;
+}
+
+.projectspage .row {
+    margin-top: 2em;
+}
+
+.projectspage #projects .row .project-holder{
+    
+    
+    background-color: #FFFFFF;
+    position:relative;
+    width: 350px;
+    height: 350px;
+    margin: 2em auto 3em auto;
+    overflow:hidden;
+
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+
+.projectspage #projects .row .project-holder img{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+}
+
+.projectspage #projects .row .project-holder:hover{
+    background-color: #000000;
+}
+
+.projectspage #projects .row .project-holder:hover img{
+    opacity: 0.2;
+}
+
+.projectspage #projects .row .project-holder .project-caption {
+
+    padding: 0.5em;
+    display: none;
+    color: #FFFFFF;
+    text-align: center;
+    position:absolute;
+    z-index: 1;
+    left:50%;
+    top:45%;
+    width:inherit;
+    transform:translate(-50%, -50%); 
+}
+
+.projectspage #projects .row .project-holder:hover .project-caption{
+    display: block;
+}
+
+.projectspage #projects .row .project-holder .project-caption p{
+    margin-bottom: 2em;
+}
+
+
+/* --------------------------------------
+   Project Page Styles
+   -------------------------------------- */
+
+#aishwarya-birthday h2{
+    color: #222222;
+}
+
+#aishwarya-birthday #main-container{
+    background-color: #ffffff;
+    color: #222222;
+    padding: 4em 0em 0em 0em;
+}
+
+#aishwarya-birthday img {
+
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 2em;
+}
+
+#aishwarya-birthday #note {
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Tangerine', cursive;
+    word-spacing: 0.3em;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0em;
+    padding: 0.5em 2em 5em 2em;
+    text-align: center;
+}
+
+
+
+
+/* --------------------------------------
+   Clash of Clans Page Styles
+   -------------------------------------- */
+
+.cocpage #main-container{
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.cocpage .container .clanHeader{
+    background-image: url("../images/clash_of_clans_background.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.cocpage .clanHeader > div{
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.cocpage .clanHeader .banner img{
+   width: 100%;
+   max-width: 200px;
+}
+
+.cocpage .clanHeader .stats{
+    padding-left: 1em;
+}
+
+.cocpage .clanHeader .stats hr{
+    margin: 0em 0em 0.2em 0em;
+}
+
+.cocpage .clanHeader .stats #clan-name{
+    font-size: 200%;
+    font-weight: 700;
+    display : block;
+}
+
+.cocpage .clanHeader .stats .attribute{
+    float: left;
+}
+
+.cocpage .clanHeader .stats .value{
+    font-weight: 400;
+    float: right;
+}
+
+.cocpage .clanHeader .description {
+    margin-top: 4em;
+}
+
+.cocpage .memberDetails a{
+    color: #FFFFFF;
+}
+
+.cocpage .memberDetails .member {
+    border-radius: 1em;
+    background-color: #DDDDDD;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.cocpage .memberDetails .member .col-sm-1{
+    padding: 0.4em;
+}
+
+.cocpage .memberDetails .member > div {
+    height: 80px;
+}
+
+.cocpage .memberDetails .member .border-col {
+    border-right: 2px solid #CCCCCC;
+}
+
+.cocpage .memberDetails .member img{
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.cocpage .memberDetails .member .expLevel{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-shadow:  0px 3px 1px #000000;
+} 
+
+.cocpage .memberDetails .member .player-name{
+    font-size: 24px;
+    text-shadow:  0px 3px 2px #000000;
+} 
+
+.cocpage .memberDetails .member .player-rank{
+    font-weight: 500;
+    color: #888888;
+} 
+
+.cocpage .memberDetails .member .player-stats .row {
+    text-align: center;
+}
+
+.cocpage .memberDetails .member .player-stats .row > div{
+    padding: 0px;
+}
+
+.cocpage .memberDetails .member .player-stats .row .player-attr{
+    font-weight: 500;
+    color: #888888;
+}
+
+.cocpage .memberDetails .member .player-stats .row .player-val{
+    padding: 0.4em 0em 0.4em 0em;
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    color: #000000;
+}
+
+.cocpage .memberDetails .member .player-stats .row .trophy-stats{
+    position: relative;
+    background-color: #f0bd2e;
+    border-radius: 1em;
+    height: 100%;
+    
+}
+
+.cocpage .memberDetails .member .player-stats .row .trophy-stats .trophy{
+    position: relative;
+    height: 50%;
+}
+
+.cocpage .memberDetails .member .player-stats .trophy-count{
+    position: absolute;
+    z-index: 10;
+    font-size: 24px;
+    left: 10%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+
+/* --------------------------------------
+   BNMIT CMS
+   -------------------------------------- */
+
+
+
+.cmshome #main-container {
+    position: relative;
+    background-color:  #d4edea;
+    height : calc(100% - 50px);
+}
+
+
+.cmshome #main-container #login-div form{
+    padding-bottom: 4em;
+    width: 100%;
+}
+
+.cmshome #main-container #login-div form table{
+    margin: auto;
+}
+
+.cmshome #main-container #login-div table td{
+    padding: 0.5em;
+}
+
+.cmshome #main-container #login-div .input-textfield {
+    color: #000000;
+    font-size: 1.25em;
+    border-radius: 8px;
+    width: 250px;
+    padding: 7px;
+    margin: 0.5em;
+}
+
+.cmshome #main-container #login-div .btn-primary.dark{
+    margin:0px;
+}
+
+.cmspage #main-container {
+    padding: 0px;
+}
+
+.cmspage #main-container #subject-list {
+    
+    background-color:  #d4edea;
+    width: fit-content;
+    padding: 0.5em;
+    
+}
+
+.cmspage #main-container #subject-list form{
+    
+    display : inline;
+    
+}
+
+.cmspage #main-container #subject-list .btn{
+
+    margin: 0.5em;
+    
+}
+
+.cmspage #main-container #chartdiv {
+    min-width: 100%;
+    min-height: 500px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait Phone */
+@media screen and (max-width: 425px) {
+
+
+    /* --- Global --- */
+    body {
+        font-size: 10px;
+    }
+
+    .social-link-list{
+        column-count: 2;
+    }
+
+    footer .container .row div #follow-me{
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    /* --- Homepage --- */
+    .homepage #mainBanner{
+        height: 240px;
+    }
+    
+    .homepage .para-desc {
+        width: inherit;
+        font-size: 14px;
+        margin: 0em 1em 0em 1em; 
+    }
+    
+    .homepage #skill-wrapper #skills{
+        margin: 0em 1em 0em 1em;
+    }
+
+    .homepage #skill-wrapper #skills img{
+        width: 70px;
+    }
+
+    .homepage #projects-wrapper .row .project-holder{
+        height: 250px;
+        width: 250px;
+    }
+
+    .homepage .btn-primary.light {
+        font-weight: 400;
+    }
+
+    .homepage #instagram-wrapper .insta-img{
+        height: 150px;
+    }
+    
+    .homepage #instagram-wrapper #posts {
+        width: 300px;
+    }
+
+    /* --- Projectpage --- */
+    .projectspage #projects .row .project-holder{
+        height: 300px;
+        width: 300px;
+    }
+
+    .projectspage #projects .row .project-holder .project-caption{
+        padding: 1em;
+        font-size: 14px;
+    }
+    
+    /* --- CoC Page ---*/
+    .cocpage .clanHeader > div{
+        margin-bottom: 0em;
+    }
+    
+    .cocpage .clanHeader .description {
+        margin-top: 1em;
+    }
+
+    .cocpage .memberDetails .member > div {
+        margin-bottom: 1em;
+    }
+
+}
+
+
+/* Landscape Phone to Portrait Tablet */
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+
+    /* --- Global --- */
+    body {
+        font-size: 12px;
+    }
+
+    /* --- Homepage --- */
+    .homepage #mainBanner{
+        height: 360px;
+    }
+    
+    .homepage .para-desc {
+        width: inherit;
+        margin: 0em 2.5em 0em 2.5em; 
+    }
+
+    .homepage #skill-wrapper #skills{
+        margin: 0em 3em 0em 3em;
+    }
+    
+    .homepage #skill-wrapper #skills img{
+        width: 120px;
+    }
+
+    .homepage #projects-wrapper .row .project-holder{
+        height: 350px;
+        width: 350px;
+    }
+    
+    .homepage #instagram-wrapper .insta-img{
+        height: 200px;
+    }
+    
+    .homepage #instagram-wrapper #posts {
+        width: 400px;
+    }
+
+    .homepage .btn-primary.light {
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+    
+
+
+    /* --- Projectpage --- */
+    .projectspage #projects .row .project-holder{
+        height: 350px;
+        width: 350px;
+    }
+
+    .projectspage #projects .row .project-holder .project-caption{
+        padding: 1em;
+        font-size: 16px;
+    }
+    
+    /* --- CoC Page ---*/
+    .cocpage .clanHeader > div{
+        margin-bottom: 0em;
+    }
+    
+    .cocpage .clanHeader .description {
+        margin-top: 1em;
+    }
+    .cocpage .memberDetails .member > div {
+        margin-bottom: 1em;
+    }
+}
+
+
+/* Landscape Tablet to Small Desktop*/
+@media screen and (min-width:768px) and (max-width: 991px) {
+
+
+    /* --- Global --- */
+    body {
+        font-size: 14px;
+    }
+
+
+   /* --- Homepage --- */
+    .homepage #mainBanner{
+        height: 480px;
+    }
+    
+    .homepage .para-desc {
+        width: inherit;
+        margin: 0em 5em 0em 5em; 
+    }
+    
+    .homepage #skill-wrapper #skills{
+        margin: 0em 6.5em 0em 6.5em;
+    }
+
+    .homepage #skill-wrapper #skills img{
+        width: 150px;
+    }
+
+    .homepage #projects-wrapper .row .project-holder{
+        height: 450px;
+        width: 450px;
+    }
+
+    .homepage .btn-primary.light {
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+    
+    .homepage #instagram-wrapper #posts {
+        width: 600px;
+    }
+
+    /* --- Projectpage --- */
+    .projectspage #projects .row .project-holder{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+/* Small Desktop to Medium Desktop*/
+@media screen and (min-width:992px) and (max-width: 1199px) {
+
+
+    /* --- Global --- */
+    body {
+        font-size: 14px;
+    }
+
+
+    /* --- Homepage --- */
+    .homepage #mainBanner{
+        height: 480px;
+    }
+    
+    .homepage .para-desc {
+        width: inherit;
+        margin: 0em 7em 0em 7em; 
+    }
+    
+    .homepage #skill-wrapper #skills{
+        margin: 0em 6.5em 0em 6.5em;
+    }
+
+    .homepage #skill-wrapper #skills img{
+        width: 200px;
+    }
+
+    .homepage #projects-wrapper .row .project-holder{
+        height: 300px;
+        width: 300px;
+    }
+
+    .homepage .btn-primary.light {
+        font-weight: 700;
+        letter-spacing: 0.15em;
+    }
+    
+    .homepage #instagram-wrapper #posts {
+        width: 900px;
+    }
+
+    /* --- Projectpage --- */
+    .projectspage #projects .row .project-holder{
+        height: 300px;
+        width: 300px;
+    }
+
+}
